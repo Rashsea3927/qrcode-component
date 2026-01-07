@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+}
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --leading-tight: 1.2;
+  --leading-normal: 1.4;
+  --rounded-lg: 0.625rem; /* 10px */
+  --rounded-3xl: 1.25rem; /* 20px */
+  --shadow-md: 0 1.5625rem 1.5625rem 0 rgb(0 0 0 / 4.77%);
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply font-outfit text-[22px] font-bold tracking-normal leading-tight;
+  }
+
+  .text-preset-2 {
+    @apply font-outfit text-[15px] font-normal tracking-[0.2px] leading-normal;
+  }
+}
